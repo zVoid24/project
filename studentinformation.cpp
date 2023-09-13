@@ -47,7 +47,7 @@ int main()
     cout << setw(5) << "Name" << setw(10) << "ID" << setw(15) << "Section" << setw(12) << "CGPA" << setw(16) << "Semester" << endl;
     for (int i = 0; i < n; i++)
     {
-        cout << setw(student[i].name.length() + 1) << student[i].name << setw(8 - (student[i].name.length() - 4) + 3) << student[i].id << setw(11) << student[i].section << setw(15) << fixed << setprecision(2) << (float)student[i].cgpa << setw(9 + student[i].semester.length()) << student[i].semester << endl;
+        cout << setw(student[i].name.length() + 1) << student[i].name << setw(8 - (student[i].name.length() - 4) + 3) << student[i].id << setw(11) << student[i].section << setw(15) << fixed << setprecision(2) << (float)student[i].cgpa << setw(8 + student[i].semester.length()) << student[i].semester << endl;
     }
 
     return 0;
